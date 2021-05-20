@@ -22,3 +22,27 @@ Objectives of Normal Form
 2. To reduce the need for refactoring the database as new types of data are introduced.
 3. To make the relational model more informative to users
 4. To make the database neutral to the query statistics.
+
+### Normal Forms
+The process of normalization is a step by step process. 
+-   First Normal Form (1NF)
+-   Second Normal Form (2NF)
+-   Third Normal Form (3NF)
+There are about siz normal forms but most database try to achieve up to the 3NF. The 4-6NF is pretty much for academic purpose and not for production. 
+
+### 1 NF
+How to reach 1st Normal form
+-   Atomic values: each cell contains unique and single values.
+-   Be able to add data without altering the table.
+-   Separate different relations into different tables.
+-   Keep relationships between tables together with foreign keys.
+
+### 2 NF
+How to reach 2nd Normal Form
+-   Have reached 1NF
+-   All columns in the table must rely on the Primary Key.
+
+### 3 NF
+How to reach 3rd Normal Form
+-   Must be in 2nd Normal Form
+-   No transitive dependencies
