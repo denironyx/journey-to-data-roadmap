@@ -76,7 +76,7 @@ Two of the most popular data mart schema for datawarehouses are:
 ### Star Schema
 Star schema is the simplest style of data mart schema. The star schema consists of one of more fact tables referenciing any number of dimension tables.
 
-### Why "star" schema?
+#### Why "star" schema?
 -   Gets its name from the physical model resembling a star shape.
 -   A fact table is at its center.
 -   Dimension table surrounds the fact table representing the star's points.
@@ -91,3 +91,14 @@ Drawbacks
 -   Data integrity
 -   Decrease query flexibility
 -   Many to many relationship
+
+### Snowflake Schema
+It's the logical arrangement of tables in a multidimensional database represented by centralized fact tables which are connected to multiple dimensions.
+
+#### Why "snowflake" schema?
+It's a complex snowflake shape that emerges when the dimensions of a snowflake schema are elaborated, having multiple levels of relationships, child tables having multiple parents.
+
+### Snowflake vs Star
+-   Star schema is a special, simplified case of the snowflake schema.
+-   Star schema does not allow for one to many relationships while the snowflake schema does.
+-   Snowflake schema is more normalized than Star schema but only in 1NF or 2NF
