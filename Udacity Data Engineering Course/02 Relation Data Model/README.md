@@ -72,3 +72,22 @@ This is the process of trying to improve the read performance of a databaase at 
 Two of the most popular data mart schema for datawarehouses are:
 1.  Star Schema
 2.  Snowflake Schema
+
+### Star Schema
+Star schema is the simplest style of data mart schema. The star schema consists of one of more fact tables referenciing any number of dimension tables.
+
+### Why "star" schema?
+-   Gets its name from the physical model resembling a star shape.
+-   A fact table is at its center.
+-   Dimension table surrounds the fact table representing the star's points.
+
+Benefits  
+-   Allows Denormalization
+-   Simplifies queries
+-   Fast aggregation
+
+Drawbacks
+-   Issues that come with denormilization
+-   Data integrity
+-   Decrease query flexibility
+-   Many to many relationship
