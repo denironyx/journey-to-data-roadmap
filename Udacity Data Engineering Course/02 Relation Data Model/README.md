@@ -46,3 +46,12 @@ How to reach 2nd Normal Form
 How to reach 3rd Normal Form
 -   Must be in 2nd Normal Form
 -   No transitive dependencies
+
+## Denormalization
+This is the process of trying to improve the read performance of a databaase at the expense of losing some write performance by adding redundant copies of data.ical
+
+### Logical Design Change
+1.  The Designer is incharge of keeping data consistent
+2.  Reads will be faster(select)
+3.  Writes will be slower (insert, update, delete)
+
