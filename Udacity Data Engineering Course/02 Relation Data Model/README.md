@@ -59,3 +59,16 @@ This is the process of trying to improve the read performance of a databaase at 
 ** Normalization** is about trying to increase data integrity by reducing the number of copies of the data. Data that needs to be added or updated will be done in as few places as possible.
 
 ** Denormalization** is trying to increase performance by reducing the number of joins between tables (as joins can be slow). Data integrity will take a bit of a potential hit, as there will be more copies of the data (to reduce JOINS).
+
+### Facts and Dimension Tables
+-   Work together to create an organized adta models
+-   While fact and dimension are not created differently in the DDL, they are conceptual and extremely important for organization.
+
+**Fact table** consists of the measurements, metrics or facts of a business process.
+
+**Dimension table** is a structure that categorizes facts and measures in order to enable users to answer business questions. Dimensions are people, products, place, and time.
+
+### Implementing Different Schemas
+Two of the most popular data mart schema for datawarehouses are:
+1.  Star Schema
+2.  Snowflake Schema
