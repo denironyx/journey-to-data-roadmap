@@ -68,6 +68,13 @@ This is the process of trying to improve the read performance of a databaase at 
 
 **Dimension table** is a structure that categorizes facts and measures in order to enable users to answer business questions. Dimensions are people, products, place, and time.
 
+In this example, it helps to think about the Dimension tables providing the following information:
+    • Where the product was bought? (Dim_Store table)
+    • When the product was bought? (Dim_Date table)
+    • What product was bought? (Dim_Product table)
+The Fact table provides the metric of the business process (here Sales).
+    • How many units of products were bought? (Fact_Sales table)
+    
 ### Implementing Different Schemas
 Two of the most popular data mart schema for datawarehouses are:
 1.  Star Schema
