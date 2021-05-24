@@ -46,3 +46,6 @@ How to reach 2nd Normal Form
 How to reach 3rd Normal Form
 -   Must be in 2nd Normal Form
 -   No transitive dependencies
+
+## Denormalization
+Is the process of trying to improve the read performance of a database at the expense of losing some write performance by adding redundant copies of data.
