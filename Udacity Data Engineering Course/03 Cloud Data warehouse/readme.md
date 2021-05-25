@@ -38,3 +38,10 @@ Finally, the analytical processes requires the business-user-facing application 
 -   Performant
 -   Handles new questions well
 -   Secure
+
+## Dimensional Modelling
+### Dimensional Modelling Goals
+-   Easy to understand
+-   Fast analytical query performance
+-   Star Schema - Joins with dimensions only good for OLAP not OLTP
+-   3NF - Lots of expensive joins, hard to explain to business users.
