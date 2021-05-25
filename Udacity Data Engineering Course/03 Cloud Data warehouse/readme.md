@@ -45,3 +45,29 @@ Finally, the analytical processes requires the business-user-facing application 
 -   Fast analytical query performance
 -   Star Schema - Joins with dimensions only good for OLAP not OLTP
 -   3NF - Lots of expensive joins, hard to explain to business users.
+
+## FACTs and Dimensions
+Fact tables
+-   Record business events, like an order, a phone call, a book reveiew.
+-   Fact tables columns record events recorded in quantifiable metrics like quantity of an item, duration of a call, a book rating.
+
+Dimension tables
+-   Record the context of the business events, e.g. who, what, where, why, etc.
+-   Dimension tables columns contain attributes like the store at which an item is purchased, or the customer who made the call, etc
+
+### Fact or Dimension Dilemma
+-   For facts, if you're unsusre if a column is a fact or dimension, the simplest rule is that a fact is usually: *Numeric & Additive*
+
+-   Examples facts:
+    -   A comment on an article represent an event but we can not easily make a statistic out of it content per se (not a good fact)
+    -   Invoice number is numeric but adding it does not make sense (Not a good fact)
+    -   Total amount of an invoice could be added to compute total sales (A good fact)
+
+-   Examples dimensions:
+    -   Date and time are always a dimension
+    -   Physical locations and their attributes are good candidates dimensions
+    -   Human Roles like customers and staff always good candidates for dimensions
+    -   Goods sold always good candidates for dimensions.
+
+#### Example: The DVD Rentals Sample Database
+-   To master the art of dimensional modelling, one needs to see lots of schemas and think about how to design facts and dimensions from them. 
