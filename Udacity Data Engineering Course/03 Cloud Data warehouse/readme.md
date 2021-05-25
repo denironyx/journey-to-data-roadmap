@@ -31,3 +31,10 @@ The first thing we expect in the data warehouse is to perform an ETL, that is ex
 The dimensional model is designed to a) make it easy for business users to work with the data. b) improve analytical queries performance. The technologies used for storing dimensional models are different than traditional technologies.
 
 Finally, the analytical processes requires the business-user-facing application are needed with clear visuals
+
+### Data warehouse goals
+-   Simple to understand
+-   Quality assured
+-   Performant
+-   Handles new questions well
+-   Secure
