@@ -71,3 +71,11 @@ Dimension tables
 
 #### Example: The DVD Rentals Sample Database
 -   To master the art of dimensional modelling, one needs to see lots of schemas and think about how to design facts and dimensions from them. 
+
+## Naive ETL: From 3NF to ETL
+-   Query the 3NF DB (Extract)
+    -   Join tables together(a bit of denormalization)
+    -   Changes types
+    -   Add new columns
+-   Loading (LOAD):
+    -   Insert into facts and dimension tables
