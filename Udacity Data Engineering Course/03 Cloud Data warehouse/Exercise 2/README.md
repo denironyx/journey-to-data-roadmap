@@ -30,3 +30,23 @@
         - Revenue by branch, Revenue by branch, month
         - Revenue by month, Revenue by movie, month
 -   Saving/Materializing the output of the CUBE operation and using it is usually enough to answer all forthcoming aggregation from business users without having to process the whole facts table again.
+
+## Data Warehouse Technologies
+### The last mile: delivering the analytics to users
+Data is available...
+-   In an understandable & performant dimensional model
+-   With conformed dimension or separate data marts
+-   For users to report and visualize
+    -   By interacting directy with the model
+    -   Or in most cases, through a BI application
+
+OLAP cubes is a very convenient way for slicing, dicing and drilling down.
+### OLAP cubes technology
+Approach 1: Pre-aggregate the OLAP cubes and saves them on a special purpose non-relational database (MOLAP)
+Approach 2: Compute the OLAP cubes on the fly from the existing relational databases where the dimensional model resides (ROLAP)
+
+### Demo: Column format in ROLAP
+-   Use a postgresql with a columnar table extension
+-   Load a dataset in a normal table
+-   Load the same dataset in a columnar table
+-   Compare the performance of the fact-aggregating querry performance in both tables.
